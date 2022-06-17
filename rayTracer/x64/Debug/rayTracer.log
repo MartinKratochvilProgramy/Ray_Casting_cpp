@@ -1,4 +1,20 @@
-﻿  Grid.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (rayTracer.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Button.cpp
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Button.cpp(18,48): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Button.cpp(18,41): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Button.cpp(26,24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Button.cpp(26,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Button.cpp(34,35): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Button.cpp(34,21): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Grid.cpp
 C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(35,17): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(36,59): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(37,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
@@ -58,4 +74,5 @@ C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(290,21): war
 C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(35,17): warning C4305: 'initializing': truncation from 'double' to 'float'
 C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(36,59): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   Generating Code...
-  rayTracer.vcxproj -> C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\x64\Debug\rayTracer.exe
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Button.cpp(53): warning C4715: 'Button::clicked': not all control paths return a value
+  rayTracer.vcxproj -> C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\x64\Debug\ray_casting.exe
