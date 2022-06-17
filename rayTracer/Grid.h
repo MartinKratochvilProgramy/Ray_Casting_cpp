@@ -10,6 +10,23 @@
 class Grid
 {
 public:
+	Grid(int WIDHT, int HEIGHT, int Nx, int Ny, int border);
+
+	void run();
+
+private:
+	void renderGrid(sf::RenderWindow& window);
+
+	void renderRays(sf::RenderWindow& window);
+
+	void changeGridOnClick(sf::RenderWindow& window);
+
+	void resetGrid();
+
+	void drawInstructions(sf::RenderWindow& window);
+
+	std::vector<std::vector<int>> gridMatrix;
+
 	int WIDTH, HEIGHT;
 	int Nx, Ny;
 	int dx, dy;
@@ -28,26 +45,5 @@ public:
 	float L;
 
 	bool renderRaysSwitch = false;
-
-	Grid(int WIDHT, int HEIGHT, int Nx, int Ny, int border);
-
-	std::vector<std::vector<int>> gridMatrix;
-
-	void print_stats();
-
-	void print_grid();
-
-	void run();
-
-private:
-	void renderGrid(sf::RenderWindow& window);
-
-	void renderRays(sf::RenderWindow& window);
-
-	void changeGridOnClick(sf::RenderWindow& window);
-
-	void resetGrid();
-
-	void drawInstructions(sf::RenderWindow& window);
 
 };

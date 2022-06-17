@@ -24,6 +24,7 @@
     <ProjectGuid>{1a855702-cc9f-4fc4-95cf-8a87df4019ba}</ProjectGuid>
     <RootNamespace>rayTracer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ray_casting</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

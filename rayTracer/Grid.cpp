@@ -26,50 +26,6 @@ Grid::Grid(int inWIDHT, int inHEIGHT, int inNx, int inNy, int iBorder) {
 
 }
 
-void Grid::resetGrid() {
-	for (int i = 0; i < Ny; i++)
-	{
-		for (int j = 0; j < Nx; j++)
-		{
-			gridMatrix[i][j] = 0;
-		}
-	}
-}
-
-void Grid::print_stats() {
-	std::cout << WIDTH << std::endl;
-	std::cout << HEIGHT << std::endl;
-	std::cout << Nx << std::endl;
-	std::cout << Ny << std::endl;
-	std::cout << dx << std::endl;
-	std::cout << dy << std::endl;
-}
-
-void Grid::drawInstructions(sf::RenderWindow& window) {
-	sf::Font font;
-	font.loadFromFile("Fonts/OpenSans-Bold.ttf");
-	sf::Text instructions;
-	instructions.setFont(font);
-	instructions.setString("'left click' to draw obstacles\n\npress 'a' or 'd' to rotate rays\n\n");
-	instructions.setCharacterSize(20);
-	instructions.setPosition(850, 40);
-	instructions.setFillColor(sf::Color::Green);
-
-	window.draw(instructions);
-
-}
-
-void Grid::print_grid() {
-	for (int i = 0; i < Ny; i++)
-	{
-		for (int j = 0; j < Nx; j++)
-		{
-			std::cout << gridMatrix[i][j] << " ";
-		}
-		std::cout << std::endl;
-	}
-}
-
 void Grid::renderGrid(sf::RenderWindow& window) {
 
 	window.clear(sf::Color{ 55, 55, 55, 255 });
@@ -93,10 +49,11 @@ void Grid::renderRays(sf::RenderWindow& window) {
 
 	sf::Vector2i mousePos = sf::Mouse::getPosition(window);
 
+	//raycasting defined here
 	for (int i = 0; i < numberOfRays; i++)
 	{
 		fi = i * dfi + rotation;
-
+		//contain angle in (0,360°)
 		if (fi > 2 * PI) {
 			fi = fmod(fi, 2 * PI);
 		}
@@ -114,6 +71,7 @@ void Grid::renderRays(sf::RenderWindow& window) {
 		bool intersects = false;
 		L = 0;
 
+		//run ray through grid until it finds full cell
 		while (!intersects) {
 			if (fi > 0 && fi < PI / 2) {
 				tanFi = tan(fi);
@@ -136,7 +94,7 @@ void Grid::renderRays(sf::RenderWindow& window) {
 					yStart += dyWall;
 					L += dxCell / cos(fi);
 				}
-
+				//check if next cell is full
 				if (nxCell < Nx && nxCell >= 0 && nyCell < Ny && nyCell >= 0) {
 					if (gridMatrix[nyCell][nxCell] == 1) {
 
@@ -267,6 +225,30 @@ void Grid::changeGridOnClick(sf::RenderWindow& window) {
 	gridMatrix[mousePos.y / dy][mousePos.x / dx] = 1;
 }
 
+void Grid::resetGrid() {
+	for (int i = 0; i < Ny; i++)
+	{
+		for (int j = 0; j < Nx; j++)
+		{
+			gridMatrix[i][j] = 0;
+		}
+	}
+}
+
+void Grid::drawInstructions(sf::RenderWindow& window) {
+	sf::Font font;
+	font.loadFromFile("Fonts/OpenSans-Bold.ttf");
+	sf::Text instructions;
+	instructions.setFont(font);
+	instructions.setString("'left click' to draw obstacles\n\npress 'a' or 'd' to rotate rays\n\n");
+	instructions.setCharacterSize(20);
+	instructions.setPosition(850, 40);
+	instructions.setFillColor(sf::Color::Green);
+
+	window.draw(instructions);
+
+}
+
 void Grid::run() {
 	sf::RenderWindow window{ sf::VideoMode(WIDTH * 1.5, HEIGHT), "Ray tracing" };
 	window.setFramerateLimit(60);
@@ -329,9 +311,11 @@ void Grid::run() {
 
 		renderGrid(window);
 		drawInstructions(window);
+
 		raysON.draw(window);
 		raysOFF.draw(window);
 		resetGridButton.draw(window);
+
 		if (renderRaysSwitch == true && mousePos.x >= 0 && mousePos.x <= WIDTH && mousePos.y >= 0 && mousePos.y <= HEIGHT) {
 			renderRays(window);
 		}

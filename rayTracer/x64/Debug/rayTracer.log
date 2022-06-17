@@ -1,48 +1,39 @@
 ﻿  Grid.cpp
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.h(18,17): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.h(19,59): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(81,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(35,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(36,59): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(37,57): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(81,44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(37,44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(85,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(85,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(101,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(104,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(111,20): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(41,31): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(41,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(58,13): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(61,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(68,20): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(112,20): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(69,20): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(152,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(164,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(170,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(197,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(203,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(218,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(230,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(236,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(255,48): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-          with
-          [
-              T=int
-          ]
-          and
-          [
-              T=float
-          ]
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(255,36): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(110,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(122,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(128,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(155,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(161,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(176,16): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(188,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(194,18): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(213,48): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=int
@@ -51,7 +42,20 @@ C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(255,36): warning C
           [
               T=float
           ]
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(271,47): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(305,21): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\martv\cpp\SFML_projects\rayTracer\rayTracer\Grid.cpp(308,21): warning C4305: '-=': truncation from 'double' to 'float'
-  rayTracer.vcxproj -> C:\Users\martv\cpp\SFML_projects\rayTracer\x64\Debug\rayTracer.exe
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(213,36): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(253,47): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(287,21): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.cpp(290,21): warning C4305: '-=': truncation from 'double' to 'float'
+  main.cpp
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(35,17): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\rayTracer\Grid.h(36,59): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  rayTracer.vcxproj -> C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\x64\Debug\rayTracer.exe

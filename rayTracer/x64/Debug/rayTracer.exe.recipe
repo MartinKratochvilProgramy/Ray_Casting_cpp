@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\martv\cpp\SFML_projects\rayTracer\x64\Debug\rayTracer.exe</FullPath>
+      <FullPath>C:\Users\martv\cpp\SFML_projects\Ray_Casting_cpp\x64\Debug\rayTracer.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
